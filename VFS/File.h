@@ -3,7 +3,7 @@
 #include "Node.h"
 #include <vector>
 
-class File: Node {
+class File: public Node {
 
 private:
 	std::vector<uint8_t> payload;
@@ -16,6 +16,6 @@ public:
 
 	virtual ~File() {}
 
-	virtual uint32_t getSize() const;
+	virtual size_t getSize() const;
 
 };

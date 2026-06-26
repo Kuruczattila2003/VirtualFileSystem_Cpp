@@ -1,0 +1,10 @@
+﻿  Directory.cpp
+  File.cpp
+  Node.cpp
+  Node.h
+  Shell.cpp
+  VFS.cpp
+  VirtualFileSystem.cpp
+  Generating Code...
+x64\Debug\Node.obj : warning LNK4042: object specified more than once; extras ignored
+  VFS.vcxproj -> C:\Users\kuruc\source\repos\VFS\x64\Debug\VFS.exe

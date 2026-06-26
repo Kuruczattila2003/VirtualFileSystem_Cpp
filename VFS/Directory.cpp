@@ -1,8 +1,8 @@
 #include "Directory.h"
 
-uint32_t Directory::getSize() const
+size_t Directory::getSize() const
 {
-    uint32_t size = 0;
+    size_t size = 0;
 
     for (auto node: children) {
         size += node->getSize();

@@ -1,6 +1,6 @@
 #include "File.h"
 
-uint32_t File::getSize() const
+size_t File::getSize() const
 {
     return payload.size();
 }

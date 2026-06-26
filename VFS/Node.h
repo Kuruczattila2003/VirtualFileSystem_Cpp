@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <string_view>
 
 
 class Node {
@@ -11,7 +12,9 @@ public:
 
 	Node(std::string name) : name{std::move(name)} {}
 
-	virtual ~Node() = 0; 
-	virtual uint32_t getSize() const = 0;
+	virtual ~Node() = default;
+	virtual size_t getSize() const = 0;
+
+	std::string_view getName() const;
 
 };

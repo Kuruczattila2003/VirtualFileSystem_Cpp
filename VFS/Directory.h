@@ -5,7 +5,7 @@
 #include <vector>
 #include <memory>
 
-class Directory : Node {
+class Directory : public Node {
 
 private:
 	using NodePtr = std::shared_ptr<Node>;
@@ -17,7 +17,7 @@ public:
 
 	~Directory() override = default;
 
-	uint32_t getSize() const override;
+	size_t getSize() const override;
 
 	void addChild(NodePtr child);
 
